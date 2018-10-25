@@ -27,3 +27,7 @@ What is the result of merging two branches together? Why do we represent it in t
 
 It results in a new commit at the branch we have checked out at, which contains changes from both the branches, which are not interfering with each other, say line A has been removed from branch1 and not from branch2 , so line A won't be present in the merged commit, if new lines are added in both the branches then they both will be present in the merged version.In the diagram we can see that we can still traverse both the branches and thus, it is represented as such and it shows
 up as sorted by time in the git log.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+If I had to do merges manually that would require me to know the definite changes + plus their number by memory, which is quite difficult, and also very tedious. With automatic merge git resolves what needs to be added and what doesn't depending on the space where changes were made, if two changes are at the same place a conflict arises, and we are given the option to resolve the conflict. So, that's it!
