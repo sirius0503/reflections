@@ -22,3 +22,8 @@ naming copies of files, the ordering everything gets jumbled! It bec
 How do the diagrams help you visualize the branch structure?
 
 Firstly, using the diagrams, I finally understood what it means by detached head, since we are not on any branch, right! Now, visualizing the branch structure helps us figure out where we went to experimenting a new feature, or where we went for fixing a bug.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+It results in a new commit at the branch we have checked out at, which contains changes from both the branches, which are not interfering with each other, say line A has been removed from branch1 and not from branch2 , so line A won't be present in the merged commit, if new lines are added in both the branches then they both will be present in the merged version.In the diagram we can see that we can still traverse both the branches and thus, it is represented as such and it shows
+up as sorted by time in the git log.
