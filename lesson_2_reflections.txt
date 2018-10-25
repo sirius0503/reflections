@@ -5,3 +5,8 @@ When we initialize a new git repository using the git command "git init", a .git
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area has the files from the working directory added using git add which we plan to add as commits. These are the files whose views we are tracking essentially. Working directory files are shown with git status command, repository is the git init initialized directory. Staging area would be the place where files that we are changing would be added and then committed. Suppose, I have a pdf document such as a tutorial and python files new.py new_module.py, I am definitely going to change new.py and new_module.py, but not the tutorial pdf, thus, I would add only the python files for committing.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+I might be modifying multiple files when doing work, those are there in the working directory, if I only move the files, which I want to commit for a specific logical change then, then I would "git add" them to the staging area and the commit them. Also, using " git diff" I can see whether there are modifications between staging area and working directory. Also, before making any commits "git diff --staged" would help in recognizing the changes in between the commit and the staging directory.
