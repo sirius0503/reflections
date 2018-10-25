@@ -10,3 +10,11 @@ The staging area has the files from the working directory added using git add wh
 How can you use the staging area to make sure you have one commit per logical change?
 
 I might be modifying multiple files when doing work, those are there in the working directory, if I only move the files, which I want to commit for a specific logical change then, then I would "git add" them to the staging area and the commit them. Also, using " git diff" I can see whether there are modifications between staging area and working directory. Also, before making any commits "git diff --staged" would help in recognizing the changes in between the commit and the staging directory.
+
+What are some situations when branches would be helpful in keeping
+your history organized? How would branches help?
+
+Its common that we might want to make new changes to our file to try out how the changes would look. Like when I was working on my power BI internship project I wanted to change the dashboards looks many times to see how it looked? To try out new features. But, I had to save my previous file and make a copy and try new things on the copy. And sometimes during making changes to the copy, some error would occur and I would end up losing some work which was good. And I had to start over again. Also, after making changes to the copy there would be stuff that I liked in the original and I would want them to be ported
+back again, thus I would have to restart again and again. Also,
+naming copies of files, the ordering everything gets jumbled! It bec
+-omes a scary nightmare.
