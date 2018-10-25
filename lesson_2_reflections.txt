@@ -18,3 +18,7 @@ Its common that we might want to make new changes to our file to try out how the
 back again, thus I would have to restart again and again. Also,
 naming copies of files, the ordering everything gets jumbled! It bec
 -omes a scary nightmare.
+
+How do the diagrams help you visualize the branch structure?
+
+Firstly, using the diagrams, I finally understood what it means by detached head, since we are not on any branch, right! Now, visualizing the branch structure helps us figure out where we went to experimenting a new feature, or where we went for fixing a bug.
