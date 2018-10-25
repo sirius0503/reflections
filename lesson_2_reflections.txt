@@ -1,3 +1,7 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 When we initialize a new git repository using the git command "git init", a .git directory is created in our current directory, which stores the metadata of the commit history. It isn't tracking any files at this stage, and there haven't been any commits. git by itself doesn't add a commit, since we would like a logical message to be associated with the commit and also since, we might not want to commit all the files. For git to maintain a history of changes, it needs to be initialized in the directory.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area has the files from the working directory added using git add which we plan to add as commits. These are the files whose views we are tracking essentially. Working directory files are shown with git status command, repository is the git init initialized directory. Staging area would be the place where files that we are changing would be added and then committed. Suppose, I have a pdf document such as a tutorial and python files new.py new_module.py, I am definitely going to change new.py and new_module.py, but not the tutorial pdf, thus, I would add only the python files for committing.
