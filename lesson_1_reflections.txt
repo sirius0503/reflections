@@ -1,34 +1,90 @@
-How did viewing a diff between two versions of a file help you see the bug that
-was introduced?
+How did viewing a diff between two versions of a file help you see th
+ bug that was introduced?
 
-    diff quickly gave us an informatic look into which lines were deleted between the old and the new file
-and which were added by giving the (-) and (+) symbols. Thus, we could spot the changes between two versions faster. And thus, find out the bug in the new file.
+    diff quickly gave us an informatic look into which lines were de
+-leted between the old and the new file
+and which were added by giving the (-) and (+) symbols. Thus, we cou
+-ld spot the changes between two versions faster. And thus, find out
+ the bug in the new file.
 
-How could having easy access to the entire history of a file make you a more
-efficient programmer in the long term?
+How could having easy access to the entire history of a file make you
+ a more efficient programmer in the long term?
 
-    If I have a whole history of what changes I made to a file then it would be easy for me, to see what were the important changes I made like did I make my code more pandorable for example, did I learn something new and use it, like say for the first time I use boxplots that can be a commit and I can straight away learn in which commit it was and look at it more easily I guess. It also helps other people figure out how the changes occurred in the long run. Also, in case of version controls like Google docs and dropbox we can see the different versions as well as have access to them. Dropbox 30 days, google-docs unlimited, I guess.
+    If I have a whole history of what changes I made to a file then
+ it would be easy for me, to see what were the important changes I
+ made like did I make my code more pandorable for example, did I lea
+-rn something new and use it, like say for the first time I use 
+boxplots that can be a commit and I can straight away learn in which
+ commit it was and look at it more easily I guess. It also helps
+ other people figure out how the changes occurred in the long run.
+ Also, in case of version controls like Google docs and dropbox we 
+can see the different versions as well as have access to them.
+ Dropbox 30 days, google-docs unlimited, I guess.
 
-What do you think are the pros and cons of manually choosing when to create a
-commit, like you do in Git, vs having versions automatically saved, like Google
-docs does?
 
-   Like I said above the pro can be saving commits with helpful comments, thus easy to retrieve that information. In google-docs saving from time to time is nice to have, since you don't have to do manual edits, in case of git through practice only we can learn when is the good time to make edits ( more so by seeing other good commit ethics! like seeing how to write good indented and commented code!). In git whether you are making too many commits or too less maybe a problem in itself.Another con for git would be the fact that it would be hard to predict whether the commits are too big, too small, or just right.Too small commits are cluttering our log with irrelevant information, too big commits lose info, getting it just right is differing from people to people. It's just like writing good python code! You need to practice.
+What do you think are the pros and cons of manually choosing when to
+ create a commit, like you do in Git, vs having versions automatical
+-ly saved, like Google docs does?
 
-Why do you think some version control systems, like Git, allow saving multiple
-files in one commit, while others, like Google Docs, treat each file separately?
 
-Like in python when you are working on a project you import modules with classes in them, you might make changes to those files. Thus, it's better to allow saving multiple files in one commit. In a project people will most definitely have more than one file and most likely they are related to each other. Like functions from one file is used in the other (modules).
-And, thus like mentioned in the video if I'm adding a particular html element to a .html file, I might want to structure its css element too, for color and font ,etc. 
-How can you use the commands git log and git diff to view the history of files?
+   Like I said above the pro can be saving commits with helpful
+ comments, thus easy to retrieve that information. In google-docs
+ saving from time to time is nice to have, since you don't have to do
+ manual edits, in case of git through practice only we can learn when
+ is the good time to make edits ( more so by seeing other good commit
+ ethics! like seeing how to write good indented and commented code!).
+ In git whether you are making too many commits or too less maybe a
+ problem in itself.Another con for git would be the fact that it 
+would be hard to predict whether the commits are too big, too small,
+ or just right.Too small commits are cluttering our log with
+ irrelevant information, too big commits lose info, getting it just
+ right is differing from people to people. It's just like writing
+ good python code! You need to practice.
 
-As far as I know git diff will show the differences between say an old_file.py and a new_file.py . Thus, helping me spot the changes that had been made. git log should be the command which gives the log history of the file changes made with date and time details. 
-git log also, features the comment i.e, remark on the logical step for the commit to have been made. git log --stat gives us the stats of the number of insertions and deletion made in earlier commits.
-How might using version control make you more confident to make changes that
-could break something?
+Why do you think some version control systems, like Git, allow saving
+ multiple files in one commit, while others, like Google Docs, treat
+ each file separately?
 
-When using version control, any changes made by me can be reverted back and I can have different classes such as master ,etc. That can help me take alternative paths to the project.
-Even if I break something and commit that code that breaks I can just checkout to an earlier commit which didn't have that bug. And resume my work from there, also using git diff I can find out the flaw in the code that ended up creeping in my code!
-Now that you have your workspace set up, what do you want to try using Git for?
+Like in python when you are working on a project you import modules
+ with classes in them, you might make changes to those files. Thus,
+ it's better to allow saving multiple files in one commit. In a
+ project people will most definitely have more than one file and most
+ likely they are related to each other. Like functions from one file
+ is used in the other (modules).
+And, thus like mentioned in the video if I'm adding a particular html
+ element to a .html file, I might want to structure its css element 
+too, for color and font ,etc. 
+How can you use the commands git log and git diff to view the history
+ of files?
 
-    I have an internship assignment task for which I am willing to use git to make commits, a github readme file, etc. I would like to make one of the best solutions to the task possible and experiment with various things, new commands, new visualizations. Try to make it really beautifully formatted! Everything will be great, I promise you I'm not leaving this opportunity get out of my hand, and then after getting the internship, I'm going to get a PPO at SocialCops, salary isn't the main thing, the main thing would be whether I'm having fun or not and after that not going below 8 lakhs per annum! Let's do it, let's show what I've got!
+As far as I know git diff will show the differences between say an
+ old_file.py and a new_file.py . Thus, helping me spot the changes
+ that had been made. git log should be the command which gives the 
+log history of the file changes made with date and time details.
+ git log also, features the comment i.e, remark on the logical step
+ for the commit to have been made. git log --stat gives us the stats
+ of the number of insertions and deletion made in earlier commits.
+How might using version control make you more confident to make 
+changes that could break something?
+
+When using version control, any changes made by me can be reverted
+ back and I can have different classes such as master ,etc. That can
+ help me take alternative paths to the project.
+Even if I break something and commit that code that breaks I can just
+ checkout to an earlier commit which didn't have that bug. And resume
+ my work from there, also using git diff I can find out the flaw in
+ the code that ended up creeping in my code!
+Now that you have your workspace set up, what do you want to try
+ using Git for?
+
+    I have an internship assignment task for which I am willing to
+ use git to make commits, a github readme file, etc. I would like to
+ make one of the best solutions to the task possible and experiment
+ with various things, new commands, new visualizations. Try to make
+ it really beautifully formatted! Everything will be great, I promise
+ you I'm not leaving this opportunity get out of my hand, and then
+ after getting the internship, I'm going to get a PPO at SocialCops,
+ salary isn't the main thing, the main thing would be whether I'm
+ having fun or not and after that not going below 8 lakhs per annum!
+ Let's do it, let's show what I've got!
+

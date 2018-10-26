@@ -1,33 +1,86 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-When we initialize a new git repository using the git command "git init", a .git directory is created in our current directory, which stores the metadata of the commit history. It isn't tracking any files at this stage, and there haven't been any commits. git by itself doesn't add a commit, since we would like a logical message to be associated with the commit and also since, we might not want to commit all the files. For git to maintain a history of changes, it needs to be initialized in the directory.
+When we initialize a new git repository using the git command
+ "git init", a .git directory is created in our current directory,
+ which stores the metadata of the commit history. It isn't tracking
+ any files at this stage, and there haven't been any commits. git by
+ itself doesn't add a commit, since we would like a logical message
+ to be associated with the commit and also since, we might not want
+ to commit all the files. For git to maintain a history of changes,
+ it needs to be initialized in the directory.
 
-How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-The staging area has the files from the working directory added using git add which we plan to add as commits. These are the files whose views we are tracking essentially. Working directory files are shown with git status command, repository is the git init initialized directory. Staging area would be the place where files that we are changing would be added and then committed. Suppose, I have a pdf document such as a tutorial and python files new.py new_module.py, I am definitely going to change new.py and new_module.py, but not the tutorial pdf, thus, I would add only the python files for committing.
+How is the staging area different from the working directory and the
+ repository? What value do you think it offers?
+
+The staging area has the files from the working directory added using
+ git add which we plan to add as commits. These are the files whose
+ views we are tracking essentially. Working directory files are shown
+ with git status command, repository is the git init initialized
+ directory. Staging area would be the place where files that we are
+ changing would be added and then committed. Suppose, I have a pdf
+ document such as a tutorial and python files new.py new_module.py, I
+ am definitely going to change new.py and new_module.py, but not the
+ tutorial pdf, thus, I would add only the python files for committing.
 
 
-How can you use the staging area to make sure you have one commit per logical change?
+How can you use the staging area to make sure you have one commit per
+ logical change?
 
-I might be modifying multiple files when doing work, those are there in the working directory, if I only move the files, which I want to commit for a specific logical change then, then I would "git add" them to the staging area and the commit them. Also, using " git diff" I can see whether there are modifications between staging area and working directory. Also, before making any commits "git diff --staged" would help in recognizing the changes in between the commit and the staging directory.
+I might be modifying multiple files when doing work, those are there
+ in the working directory, if I only move the files, which I want to
+ commit for a specific logical change then, then I would "git add"
+ them to the staging area and the commit them. Also, using
+ " git diff" I can see whether there are modifications between
+ staging area and working directory. Also, before making any commits
+ "git diff --staged" would help in recognizing the changes in between
+ the commit and the staging directory.
 
 What are some situations when branches would be helpful in keeping
 your history organized? How would branches help?
 
-Its common that we might want to make new changes to our file to try out how the changes would look. Like when I was working on my power BI internship project I wanted to change the dashboards looks many times to see how it looked? To try out new features. But, I had to save my previous file and make a copy and try new things on the copy. And sometimes during making changes to the copy, some error would occur and I would end up losing some work which was good. And I had to start over again. Also, after making changes to the copy there would be stuff that I liked in the original and I would want them to be ported
-back again, thus I would have to restart again and again. Also,
-naming copies of files, the ordering everything gets jumbled! It bec
--omes a scary nightmare.
+Its common that we might want to make new changes to our file to try
+ out how the changes would look. Like when I was working on my power
+ BI internship project I wanted to change the dashboards looks many
+ times to see how it looked? To try out new features. But, I had to
+ save my previous file and make a copy and try new things on the copy
+. And sometimes during making changes to the copy, some error would
+ occur and I would end up losing some work which was good. And I had
+ to start over again. Also, after making changes to the copy there
+ would be stuff that I liked in the original and I would want them to
+ be ported back again, thus I would have to restart again and again.
+ Also,naming copies of files, the ordering everything gets jumbled!
+ It becomes a scary nightmare.
 
 How do the diagrams help you visualize the branch structure?
 
-Firstly, using the diagrams, I finally understood what it means by detached head, since we are not on any branch, right! Now, visualizing the branch structure helps us figure out where we went to experimenting a new feature, or where we went for fixing a bug.
+Firstly, using the diagrams, I finally understood what it means by
+ detached head, since we are not on any branch, right! Now,
+ visualizing the branch structure helps us figure out where we went
+ to experimenting a new feature, or where we went for fixing a bug.
 
-What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+What is the result of merging two branches together? Why do we 
+represent it in the diagram the way we do?
 
-It results in a new commit at the branch we have checked out at, which contains changes from both the branches, which are not interfering with each other, say line A has been removed from branch1 and not from branch2 , so line A won't be present in the merged commit, if new lines are added in both the branches then they both will be present in the merged version.In the diagram we can see that we can still traverse both the branches and thus, it is represented as such and it shows
-up as sorted by time in the git log.
+It results in a new commit at the branch we have checked out at, 
+which contains changes from both the branches, which are not
+ interfering with each other, say line A has been removed from
+ branch1 and not from branch2 , so line A won't be present in the
+ merged commit, if new lines are added in both the branches then they
+ both will be present in the merged version.In the diagram we can see
+ that we can still traverse both the branches and thus, it is
+ represented as such and it shows up as sorted by time in the git log.
 
-What are the pros and cons of Git's automatic merging vs. always doing merges manually?
 
-If I had to do merges manually that would require me to know the definite changes + plus their number by memory, which is quite difficult, and also very tedious. With automatic merge git resolves what needs to be added and what doesn't depending on the space where changes were made, if two changes are at the same place a conflict arises, and we are given the option to resolve the conflict. So, that's it!
+What are the pros and cons of Git's automatic merging vs. always
+ doing merges manually?
+
+If I had to do merges manually that would require me to know the
+ definite changes + plus their number by memory, which is quite
+ difficult, and also very tedious. With automatic merge git resolves
+ what needs to be added and what doesn't depending on the space where
+ changes were made, if two changes are at the same place a conflict
+ arises, and we are given the option to resolve the conflict. So, 
+that's it!
+
+
